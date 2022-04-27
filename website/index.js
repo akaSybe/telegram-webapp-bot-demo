@@ -23,9 +23,9 @@ import "./style.css"
 
   function fillUser(context) {
     try {
-      document.getElementById("username").innerHTML = context.initDataUnsafe.username || "";
-      document.getElementById("first_name").innerHTML = context.initDataUnsafe.first_name || "";
-      document.getElementById("last_name").innerHTML = context.initDataUnsafe.last_name || "";
+      document.getElementById("username").innerHTML = context.initDataUnsafe.user.username || "";
+      document.getElementById("first_name").innerHTML = context.initDataUnsafe.user.first_name || "";
+      document.getElementById("last_name").innerHTML = context.initDataUnsafe.user.last_name || "";
     } catch (err) { }
   }
 
