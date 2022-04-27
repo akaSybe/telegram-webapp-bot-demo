@@ -5,16 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegram Webapp Bot</title>
+    
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="module" crossorigin src="/assets/index.1923bf7d.js"></script>
+    <link rel="stylesheet" href="/assets/index.c6930ee9.css">
   </head>
   <body>
-    Yes, you are here
+    <div class="flex flex-col text-slate-600">
+      <div class="p-1 space-y-2">
+        <h5 class="font-bold">user</h5>
+        <div id="user" class="text-sm space-y-1">
+          <div class="flex space-x-2"><span class="w-32">username</span><span id="username"></span></div>
+          <div class="flex space-x-2"><span class="w-32">first_name</span><span id="first_name"></span></div>
+          <div class="flex space-x-2"><span class="w-32">last_name</span><span id="last_name"></span></div>
+        </div>
+      </div>
+      <div class="p-1 space-y-2">
+        <h5 class="font-bold">theme</h5>
+        <div id="theme" class="text-sm space-y-1">
+          <div class="flex space-x-2"><span class="w-32">color_scheme</span><span id="color_scheme"></span></div>
+          <div class="flex space-x-2"><span class="w-32">bg_color</span><span id="bg_color"></span></div>
+          <div class="flex space-x-2"><span class="w-32">text_color</span><span id="text_color"></span></div>
+          <div class="flex space-x-2"><span class="w-32">hint_color</span><span id="hint_color"></span></div>
+          <div class="flex space-x-2"><span class="w-32">link_color</span><span id="link_color"></span></div>
+          <div class="flex space-x-2"><span class="w-32">button_color</span><span id="button_color"></span></div>
+          <div class="flex space-x-2">
+            <span class="w-32">button_text_color</span><span id="button_text_color"></span>
+          </div>
+        </div>
+      </div>
+      <div class="p-1 space-y-2">
+        <h5 class="font-bold">events</h5>
+        <div id="events" class="text-sm space-y-1">
+          <div class="hidden bg-red-100 text-red-500">mainButtonClicked</div>
+        </div>
+      </div>
+    </div>
     <script>
-      try {
-        console.log(window.Telegram.WebApp);
-      } catch (err) {
-        console.error(err);
-      }
+      // window.Telegram = {
+      //   WebApp: {
+      //     initDataUnsafe: {
+      //       username: "akasybe",
+      //       first_name: "Flasda",
+      //       last_name: "Dasdas",
+      //     },
+      //     colorScheme: "dark",
+      //     themeParams: {
+      //       bg_color: "#FFSD1D",
+      //       text_color: "#RRGGBB",
+      //       hint_color: "#RRGGBB",
+      //       link_color: "#RRGGBB",
+      //       button_color: "#RRGGBB",
+      //       button_text_color: "#RRGGBB",
+      //     },
+      //   },
+      // };
     </script>
+    
   </body>
 </html>
