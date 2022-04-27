@@ -1,3 +1,4 @@
 export default {
-  root: "website"
+  root: "website",
+  base: process.env.BASE_URL
 }
