@@ -12,3 +12,5 @@ Live demo:
 4. confirm
 5. now you must see button "Website" on the left in panel
 6. click it
+
+![how-it-looks](https://user-images.githubusercontent.com/8545313/165752189-7ce5f866-dfdf-4a94-8dc8-7f93cc6d6cab.PNG)
