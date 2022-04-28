@@ -43,10 +43,49 @@ import "./style.css"
     } catch (err) { }
   }
 
+  function listenToButtonEvents(context) {
+    try {
+      const mainButton = context.MainButton;
+      const showButton = document.getElementById("show-button");
+      showButton.addEventListener("click", () => {
+        mainButton.show();
+      });
+      const hideButton = document.getElementById("hide-button");
+      hideButton.addEventListener("click", () => {
+        mainButton.hide();
+      });
+      const enableButton = document.getElementById("enable-button");
+      enableButton.addEventListener("click", () => {
+        mainButton.enable();
+      });
+      const disableButton = document.getElementById("disable-button");
+      disableButton.addEventListener("click", () => {
+        mainButton.disable();
+      });
+      const showLoadingButton = document.getElementById("show-loading-button");
+      showLoadingButton.addEventListener("click", () => {
+        mainButton.showProgress();
+      });
+      const hideLoadingButton = document.getElementById("hide-loading-button");
+      hideLoadingButton.addEventListener("click", () => {
+        mainButton.hideProgress();
+      });
+      const expandAppButton = document.getElementById("expand-app-button");
+      expandAppButton.addEventListener("click", () => {
+        context.expand();
+      });
+      const closeAppButton = document.getElementById("close-app-button");
+      closeAppButton.addEventListener("click", () => {
+        context.close();
+      });
+    } catch (err) { }
+  }
+
   try {
     const appContext = window.Telegram.WebApp;
     fillUser(appContext);
     fillTheme(appContext);
     listenToEvents(appContext);
+    listenToButtonEvents(appContext);
   } catch (err) { }
 })();
