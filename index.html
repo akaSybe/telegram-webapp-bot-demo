@@ -7,22 +7,22 @@
     <title>Telegram Webapp Bot</title>
     
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script type="module" crossorigin src="/telegram-webapp-bot-demo/assets/index.52771ad9.js"></script>
-    <link rel="stylesheet" href="/telegram-webapp-bot-demo/assets/index.c6930ee9.css">
+    <script type="module" crossorigin src="/telegram-webapp-bot-demo/assets/index.c8c71662.js"></script>
+    <link rel="stylesheet" href="/telegram-webapp-bot-demo/assets/index.7e4e41e2.css">
   </head>
   <body>
     <div class="flex flex-col text-slate-600">
       <div class="p-1 space-y-2">
-        <h5 class="font-bold">user</h5>
-        <div id="user" class="text-sm space-y-1">
+        <h5 class="font-bold bg-green-200 p-1">user</h5>
+        <div id="user" class="text-sm space-y-1 p-1">
           <div class="flex space-x-2"><span class="w-32">username</span><span id="username"></span></div>
           <div class="flex space-x-2"><span class="w-32">first_name</span><span id="first_name"></span></div>
           <div class="flex space-x-2"><span class="w-32">last_name</span><span id="last_name"></span></div>
         </div>
       </div>
       <div class="p-1 space-y-2">
-        <h5 class="font-bold">theme</h5>
-        <div id="theme" class="text-sm space-y-1">
+        <h5 class="font-bold bg-green-200 p-1">theme</h5>
+        <div id="theme" class="text-sm space-y-1 p-1">
           <div class="flex space-x-2"><span class="w-32">color_scheme</span><span id="color_scheme"></span></div>
           <div class="flex space-x-2"><span class="w-32">bg_color</span><span id="bg_color"></span></div>
           <div class="flex space-x-2"><span class="w-32">text_color</span><span id="text_color"></span></div>
@@ -35,8 +35,77 @@
         </div>
       </div>
       <div class="p-1 space-y-2">
-        <h5 class="font-bold">events</h5>
-        <div id="events" class="text-sm space-y-1">
+        <h5 class="font-bold bg-green-200 p-1">main button</h5>
+        <div id="theme" class="text-sm space-y-1 p-1">
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="show-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                show button
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="hide-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                hide button
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="enable-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                enable button
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="disable-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                disable button
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="show-loading-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                show loading
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="hide-loading-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                hide loading
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="expand-app-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                expand app
+              </button>
+            </div>
+            <span></span>
+          </div>
+          <div class="flex space-x-2">
+            <div class="w-32">
+              <button id="close-app-button" class="border border-1 rounded-lg p-1 w-full text-center text-stone-700">
+                close app
+              </button>
+            </div>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="p-1 space-y-2">
+        <h5 class="font-bold bg-green-200 p-1">events</h5>
+        <div id="events" class="text-sm space-y-1 p-1">
           <div class="hidden bg-red-100 text-red-500">mainButtonClicked</div>
         </div>
       </div>
@@ -57,6 +126,32 @@
       //       link_color: "#RRGGBB",
       //       button_color: "#RRGGBB",
       //       button_text_color: "#RRGGBB",
+      //     },
+      //     MainButton: {
+      //       isVisible: true,
+      //       isActive: true,
+      //       isProgressVisible: true,
+      //       onClick: (callback) => {
+      //         alert("button clicked");
+      //       },
+      //       show: () => {
+      //         alert("button is visible");
+      //       },
+      //       hide: () => {
+      //         alert("button is hidden");
+      //       },
+      //       enable: () => {
+      //         alert("button is visible");
+      //       },
+      //       disable: () => {
+      //         alert("button is visible");
+      //       },
+      //       showProgress: () => {
+      //         alert("button is visible");
+      //       },
+      //       hideProgress: () => {
+      //         alert("button is visible");
+      //       },
       //     },
       //   },
       // };
